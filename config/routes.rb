@@ -4,6 +4,7 @@ Pinteresting::Application.routes.draw do
   devise_for :users
   root "pages#home"
   get "about" => "pages#about" # get about_path
+  get "luke_map" => "pages#luke_map" # get luke_map_path
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
