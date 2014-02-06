@@ -29,6 +29,8 @@ gem 'bootstrap-sass' , github: 'twbs/bootstrap-sass'
 
 gem 'devise', '~>3.2.2rc2'
 
+gem 'paperclip', "~> 4.0.0"
+
 group :development, :test do
 	gem 'sqlite3'
 end
