@@ -5,7 +5,7 @@
     <tr>
       <th>Image</th>
       <th>Description</th>
-      <th></th>
+      <th>User</th>
       <th></th>
       <th></th>
     </tr>
@@ -16,9 +16,11 @@
       <tr>
         <td><%= image_tag pin.image.url %></td>
         <td><%= pin.description %></td>
-        <td><%= link_to 'Show', pin %></td>
+        <td><%= pin.user.email if pin.user%></td>
+        <td><%= link_to 'Show', pin %></td><% if pin.user == current_user %>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %> 
       </tr>
     <% end %>
   </tbody>
