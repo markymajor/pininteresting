@@ -4,7 +4,6 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
 
 
 # Use SCSS for stylesheets
@@ -32,12 +31,12 @@ gem 'devise', '~>3.2.2rc2'
 gem 'paperclip', "~> 4.0.0"
 
 group :development, :test do
-	gem 'sqlite3'
+     gem 'sqlite3'
 end
 
-group :production do 
-	gem 'pg'
-	gem 'rails_12factor'
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
 end
 
 group :doc do
