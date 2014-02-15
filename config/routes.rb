@@ -5,6 +5,7 @@ Pinteresting::Application.routes.draw do
   root "pages#home"
   get "about" => "pages#about" # get about_path
   get "luke_map" => "pages#luke_map" # get luke_map_path
+  get "test" => "pages#test"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
