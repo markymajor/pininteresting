@@ -1,0 +1,17 @@
+<%= form_for @location do |f| %>
+  <% @location.errors.full_messages.each do |msg| %>
+      <p><%= msg %></p>
+   <% end %>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -35,7 +35,11 @@ gem 'aws-sdk', '~> 1.20.0'
 
 gem 'masonry-rails', '~> 0.2.0'
 
+gem "nifty-generators", :group => :development
 
+gem 'protected_attributes'
+
+gem 'geocoder', "~> 1.1.9"
 
 group :development, :test do
      gem 'sqlite3'
@@ -51,3 +55,5 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+gem "mocha", group: :test
